@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Tytuł</title> <!-- tutaj uzupełnij tytuł -->
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta name="format-detection" content="telephone=no" />
+<script src="1.js"></script>
+<script src="2.js"></script>
+<script src="3.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <h1 class="title">TYTUŁ</h1> <!-- tutaj uzupełnij tytuł -->
+    <div class="info">Informacja</div> <!-- tutaj wstaw informację o aplikacji -->
+  </div>
+  <div class="bar">
+    <a class="btn" href="#" onclick="newgame()">Nowa</a>
+    <div id="best"></div>
+    <div id="score"></div>
+  </div>
+  <div class="game">
+    <div id="message-box">
+      <p id="message"></p>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <div class="about">
+    <p>Wstaw krótką instrukcję obsługi aplikacji</p> <!-- napisz krótką instrukcję obsługi -->
+  </div>
+  <div class="footer">
+    Modified by III M
+  </div>
+</div>
+<script>
+newgame();
+frame();
+</script>
+</body>
+</html>
