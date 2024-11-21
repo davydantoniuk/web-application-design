@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+  <title>Milionerzy</title>
+  <meta charset="utf-8">
+  <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <div id = "naglowek">
+      <img src = "grafika/logo.png" alt = "logo">
+        <h1>Milionerzy</h1>
+        <h3>Odpowiedz prawidłowo na 12 pytań</h3>
+    </div>
+  </header>
+  <main>
+    <div id = "zawartosc">
+      <div id = "gra">
+        <div id = "interfejs">
+          <div id = "imie_div">
+            <label>Podaj swoje imie<input type = "text" id = "imie_input"></label>
+            <button id = "imie_button">Ok</button>
+          </div>
+          <div class = "wiersz_gra" id = "tresc_gra">
+          </div>
+          <div class = "wiersz_gra">
+            <button class = "odp_button"></button>
+            <button class = "odp_button"></button>
+          </div>
+          <div class = "wiersz_gra">
+            <button class = "odp_button"></button>
+            <button class = "odp_button"></button>
+          </div>
+        </div>
+        <div id = "kwoty">
+          <ol>
+            <li>500 zł</li>
+            <li>1000 zł</li>
+            <li>2000 zł</li>
+            <li>5000 zł</li>
+            <li>10000 zł</li>
+            <li>20000 zł</li>
+            <li>40000 zł</li>
+            <li>75000 zł</li>
+            <li>125000 zł</li>
+            <li>250000 zł</li>
+            <li>500000 zł</li>
+            <li>1000000 zł</li>
+          </ol>
+        </div>
+      </div>
+      <div id = "dodaj_form">
+        <div><label>Treść pytania: <input type = 'text' id = 'tresc' required></label></div>
+        <div><label>Odpowiedź A: <input type = 'text' class = 'odp' required></label></div>
+        <div><label>Odpowiedź B: <input type = 'text' class = 'odp' required></label></div>
+        <div><label>Odpowiedź C: <input type = 'text' class = 'odp' required></label></div>
+        <div><label>Odpowiedź D: <input type = 'text' class = 'odp' required></label></div>
+        <div><label>Poprawna odpowiedz:
+          <select id = 'odp_poprawna'>
+            <option>---</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+          </select>
+        </label></div>
+        <div><button id = "zapisz_button">Zapisz</button></div>
+      </div>
+      <div id = "ranking_zawartosc"></div>
+    </div>
+  </main>
+  <nav>
+    <div id = "menu">
+      <div id = "graj">
+        <button id = "graj_button">Zagraj</button>
+      </div>
+      <div id = "ranking">
+        <button id = "ranking_button">Ranking</button>
+      </div>
+      <div id = "dodaj">
+        <button id = "dodaj_button">Dodaj pytanie</button>
+      </div>
+
+    </div>
+  </nav>
+  <script src = "main.js"></script>
+</body>
+</html>

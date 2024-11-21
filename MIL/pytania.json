@@ -1,0 +1,69 @@
+{
+  "pytania": [
+    {
+      "tresc": "Który pierwiastek chemiczny ma symbol 'Au'?",
+      "odp": ["Srebro", "Złoto", "Rtęć", "Platyna"],
+      "odp_poprawna": "B"
+    },
+    {
+      "tresc": "Ile wynosi liczba π (pi) z dokładnością do dwóch miejsc po przecinku?",
+      "odp": ["3.14", "3.15", "3.12", "3.13"],
+      "odp_poprawna": "A"
+    },
+    {
+      "tresc": "Który organ w ludzkim ciele jest odpowiedzialny za filtrowanie krwi?",
+      "odp": ["Płuca", "Serce", "Nerki", "Wątroba"],
+      "odp_poprawna": "C"
+    },
+    {
+      "tresc": "Który rok rozpoczął II wojnę światową?",
+      "odp": ["1935", "1939", "1941", "1945"],
+      "odp_poprawna": "B"
+    },
+    {
+      "tresc": "Jaką funkcję pełni mitochondrium w komórce?",
+      "odp": [
+        "Magazynuje geny",
+        "Tworzy energię",
+        "Transportuje białka",
+        "Rozkłada tłuszcze"
+      ],
+      "odp_poprawna": "B"
+    },
+    {
+      "tresc": "Który z tych wynalazków jest przypisywany Nikoli Tesli?",
+      "odp": ["Samochód spalinowy", "Silnik elektryczny", "Telefon", "Żarówka"],
+      "odp_poprawna": "B"
+    },
+    {
+      "tresc": "Która planeta w Układzie Słonecznym jest największa?",
+      "odp": ["Ziemia", "Saturn", "Jowisz", "Neptun"],
+      "odp_poprawna": "C"
+    },
+    {
+      "tresc": "Które z tych państw NIE jest członkiem Unii Europejskiej?",
+      "odp": ["Norwegia", "Austria", "Polska", "Hiszpania"],
+      "odp_poprawna": "A"
+    },
+    {
+      "tresc": "Która liczba jest pierwszą liczbą pierwszą po 10?",
+      "odp": ["11", "13", "15", "17"],
+      "odp_poprawna": "A"
+    },
+    {
+      "tresc": "Jak nazywa się proces, w którym woda przechodzi ze stanu ciekłego w stan gazowy?",
+      "odp": ["Kondensacja", "Parowanie", "Zamarzanie", "Topnienie"],
+      "odp_poprawna": "B"
+    },
+    {
+      "tresc": "Które z poniższych dzieł sztuki zostało namalowane przez Leonarda da Vinci?",
+      "odp": ["Guernica", "Mona Lisa", "Krzyk", "Gwiaździsta noc"],
+      "odp_poprawna": "B"
+    },
+    {
+      "tresc": "Który język programowania został stworzony jako pierwszy?",
+      "odp": ["Python", "C", "Fortran", "Java"],
+      "odp_poprawna": "C"
+    }
+  ]
+}

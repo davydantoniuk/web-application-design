@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "pl">
+<head>
+  <title>txt do json - pytania do quizu</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <input type = "text" id = "id">
+  <button onClick = "konwertuj()">Konwertuj</button>
+  <div id = "output"><div>
+</body>
+<script src = "jquery.js"></script>
+<script>
+  var json = Array();
+  function konwertuj(){
+    var tekst_c = document.getElementById("id").value;
+    do {
+      tekst = tekst_c.substring(0, tekst_c.search("#"));
+      tekst_c = tekst_c.substring(tekst_c.search("#") + 1, tekst_c.length);
+      var tresc = tekst.substring(1, tekst.search("@"));
+      tekst = tekst.substring(tekst.search("@") + 1, tekst.length);
+      var odpa = tekst.substring(0, tekst.indexOf("@"));
+      tekst = tekst.substring(tekst.search("@") + 1, tekst.length);
+      var odpb = tekst.substring(0, tekst.indexOf("@"));
+      tekst = tekst.substring(tekst.search("@") + 1, tekst.length);
+      var odpc = tekst.substring(0, tekst.indexOf("@"));
+      tekst = tekst.substring(tekst.search("@") + 1, tekst.length);
+      var odpd = tekst.substring(0, tekst.length);
+      tekst = tekst.substring(tekst.search("@") + 1, tekst.length);
+      if((odpa[0] == "'") && (odpa[1] == "'")) {
+        odp_poprawna = 'A';
+        odpa = odpa.substring(3, odpa.length -5);
+      }
+      else if((odpb[0] == "'") && (odpb[1] == "'")) {
+        odp_poprawna = 'B';
+        odpb = odpb.substring(3, odpb.length -5);
+      }
+      else if((odpc[0] == "'") && (odpc[1] == "'")) {
+        odp_poprawna = 'C';
+        odpc = odpc.substring(3, odpc.length -5);
+      }
+      else if((odpd[0] == "'") && (odpd[1] == "'")) {
+        odp_poprawna = 'D';
+        odpd = odpd.substring(3, odpd.length -5);
+      }
+      json.push( {
+        tresc: tresc,
+        odp: [odpa, odpb, odpc, odpd],
+        odp_poprawna: odp_poprawna
+      });;
+    }while(tekst.length != 0);
+    $("#output").html(JSON.stringify(json));
+  }
+</script>
+</html>
